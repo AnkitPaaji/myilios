@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 900" role="img" aria-label="weightlifter heavy squat background graphic">
+  <defs>
+    <radialGradient id="goldGlow" cx="50%" cy="55%" r="60%">
+      <stop offset="0%" stop-color="#f4bd18" stop-opacity="0.36"/>
+      <stop offset="42%" stop-color="#9f7600" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0" x2="1">
+      <stop offset="0" stop-color="#151515"/>
+      <stop offset=".45" stop-color="#2a2414"/>
+      <stop offset="1" stop-color="#050505"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1800" height="900" fill="none"/>
+  <ellipse cx="900" cy="560" rx="640" ry="270" fill="url(#goldGlow)"/>
+  <g opacity=".35" stroke="#f4bd18" stroke-width="2" fill="none">
+    <path d="M260 210 C500 120 740 260 960 174 C1190 86 1392 174 1560 104"/>
+    <path d="M220 710 C520 595 720 780 970 645 C1190 525 1395 620 1618 520"/>
+  </g>
+  <!-- barbell -->
+  <g transform="translate(900 255)" opacity=".82" filter="url(#softGlow)">
+    <rect x="-560" y="-13" width="1120" height="26" rx="13" fill="url(#metal)"/>
+    <g fill="#070707" stroke="#a88412" stroke-opacity=".45" stroke-width="4">
+      <rect x="-735" y="-112" width="54" height="224" rx="18"/>
+      <rect x="-675" y="-132" width="60" height="264" rx="18"/>
+      <rect x="-610" y="-95" width="45" height="190" rx="16"/>
+      <rect x="565" y="-95" width="45" height="190" rx="16"/>
+      <rect x="615" y="-132" width="60" height="264" rx="18"/>
+      <rect x="681" y="-112" width="54" height="224" rx="18"/>
+    </g>
+  </g>
+  <!-- squatting lifter -->
+  <g transform="translate(900 480)" opacity=".72" filter="url(#softGlow)">
+    <circle cx="0" cy="-230" r="52" fill="#090909" stroke="#f4bd18" stroke-opacity=".25" stroke-width="5"/>
+    <path d="M-80-160 C-68-235 68-235 84-160 L118 72 C62 104 -62 104 -120 72 Z" fill="#080808" stroke="#f4bd18" stroke-opacity=".24" stroke-width="4"/>
+    <path d="M-78-126 C-210-95 -310-32 -392 58" stroke="#101010" stroke-width="54" stroke-linecap="round"/>
+    <path d="M78-126 C210-95 310-32 392 58" stroke="#101010" stroke-width="54" stroke-linecap="round"/>
+    <path d="M-98 58 C-210 116 -292 205 -370 326" stroke="#070707" stroke-width="62" stroke-linecap="round"/>
+    <path d="M98 58 C210 116 292 205 370 326" stroke="#070707" stroke-width="62" stroke-linecap="round"/>
+    <path d="M-370 326 C-410 338 -455 338 -495 322 C-503 296 -480 276 -438 276 L-346 276 C-328 292 -335 318 -370 326Z" fill="#050505" stroke="#d8ff22" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M370 326 C410 338 455 338 495 322 C503 296 480 276 438 276 L346 276 C328 292 335 318 370 326Z" fill="#050505" stroke="#d8ff22" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M-486 309 L-352 309" stroke="#f4bd18" stroke-width="8" stroke-linecap="round" opacity=".9"/>
+    <path d="M352 309 L486 309" stroke="#f4bd18" stroke-width="8" stroke-linecap="round" opacity=".9"/>
+  </g>
+</svg>

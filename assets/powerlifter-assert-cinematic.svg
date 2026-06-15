@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="50%" r="75%">
+      <stop offset="0" stop-color="#352100"/>
+      <stop offset="0.38" stop-color="#080603"/>
+      <stop offset="1" stop-color="#000"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" x2="1"><stop stop-color="#7b5200"/><stop offset=".55" stop-color="#ffd65a"/><stop offset="1" stop-color="#ad7700"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#g)"/>
+  <g opacity=".22">
+    <path d="M0 700 C320 610 520 760 820 660 S1280 560 1920 660" fill="none" stroke="url(#gold)" stroke-width="5"/>
+    <path d="M0 850 C380 780 550 900 900 830 S1400 720 1920 810" fill="none" stroke="#ffd65a" stroke-width="2" opacity=".55"/>
+  </g>
+  <g opacity=".16" filter="url(#blur)">
+    <circle cx="1320" cy="300" r="190" fill="#d09b13"/>
+    <circle cx="650" cy="385" r="170" fill="#bb1d16"/>
+  </g>
+  <g transform="translate(960 536) scale(1.16)" opacity=".58" filter="url(#glow)">
+    <!-- barbell -->
+    <rect x="-590" y="-222" width="1180" height="22" rx="11" fill="#d9a71f" opacity=".72"/>
+    <g fill="#161616" stroke="#c39418" stroke-width="5">
+      <rect x="-710" y="-292" width="54" height="162" rx="18"/><rect x="-650" y="-310" width="62" height="198" rx="20"/><rect x="588" y="-310" width="62" height="198" rx="20"/><rect x="656" y="-292" width="54" height="162" rx="18"/>
+    </g>
+    <!-- squatting athlete silhouette -->
+    <circle cx="0" cy="-320" r="58" fill="#030303"/>
+    <path d="M-80-255 C-42-285 46-286 84-252 C118-222 124-148 104-86 C82-20 66 44 62 110 L-56 110 C-62 38-86-20-106-84 C-126-146-116-224-80-255Z" fill="#030303"/>
+    <path d="M-92-208 C-190-192-246-162-300-110" fill="none" stroke="#030303" stroke-width="48" stroke-linecap="round"/>
+    <path d="M92-208 C190-192 246-162 300-110" fill="none" stroke="#030303" stroke-width="48" stroke-linecap="round"/>
+    <path d="M-38 88 C-128 142-192 210-250 318" fill="none" stroke="#030303" stroke-width="72" stroke-linecap="round"/>
+    <path d="M38 88 C128 142 192 210 250 318" fill="none" stroke="#030303" stroke-width="72" stroke-linecap="round"/>
+    <path d="M-250 318 C-314 350-368 360-430 346" fill="none" stroke="#030303" stroke-width="68" stroke-linecap="round"/>
+    <path d="M250 318 C314 350 368 360 430 346" fill="none" stroke="#030303" stroke-width="68" stroke-linecap="round"/>
+    <!-- assert shoes glow -->
+    <g transform="translate(-430 350) rotate(-8)">
+      <path d="M-70-24 C-15-50 70-46 130-10 C156 6 148 44 102 50 L-68 50 C-112 42-110-4-70-24Z" fill="#010101" stroke="#ffcf31" stroke-width="6"/>
+      <path d="M-32 8 L80 8" stroke="#ffd65a" stroke-width="8"/><path d="M18-24 h32 v48 h-32z" fill="#e2c14c" opacity=".95"/>
+    </g>
+    <g transform="translate(430 350) rotate(8) scale(-1 1)">
+      <path d="M-70-24 C-15-50 70-46 130-10 C156 6 148 44 102 50 L-68 50 C-112 42-110-4-70-24Z" fill="#010101" stroke="#ffcf31" stroke-width="6"/>
+      <path d="M-32 8 L80 8" stroke="#ffd65a" stroke-width="8"/><path d="M18-24 h32 v48 h-32z" fill="#e2c14c" opacity=".95"/>
+    </g>
+  </g>
+  <g opacity=".12">
+    <text x="80" y="990" fill="#ffd65a" font-size="190" font-family="Arial Black, Impact" letter-spacing="18">ASSERT</text>
+  </g>
+</svg>
